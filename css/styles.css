@@ -106,13 +106,18 @@ a:active {
   align-items: center;
 }
 .modal {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 1600px;
   height: 1024px;
-  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(252, 255, 255, 1);
+  z-index: 1000;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -154,6 +159,7 @@ a:active {
   padding-bottom: 20px;
   border-bottom: var(--link-activ) solid 4px;
   border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio {
   font-family: var(--text-font-family);
