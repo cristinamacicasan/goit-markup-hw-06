@@ -19,11 +19,7 @@
 
   <body class="container">
 
-    <div class=" modal is-hidden" data-modal>
-        <div class="modal-content">
-          <button class="close-btn" data-modal-close>x</button>
-        </div>
-      </div>
+    
 
     <header class="global-header">
       <!--Logo WebStudio-->
@@ -38,7 +34,12 @@
         <div class="nav-container">
           <nav class="main-navigation">
             <ul>
-              <li><a class="studio current" href="index.html">Studio</a></li>
+              <li><a class="studio current" href="index.html">Studio 
+                <svg class="icon-finger-1">
+                  <use xlink:href="./symbol-defs.svg#icon-finger-1">
+                    
+                  </use></svg> </a></li>
+              
               <li>
                 <a class="portofoliu" href="portofoliu.html">Portfolio</a>
               </li>
@@ -53,8 +54,13 @@
               <use href="./symbol-defs.svg#envelope" />
             </svg>
             <a class="email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+              >info@devstudio.com <svg class="icon-finger-2">
+              <use xlink:href="./symbol-defs.svg#icon-finger-1">
+                    
+              </use></svg> 
+            
+            </a>
+            
           </div>
 
           <br />
@@ -222,6 +228,10 @@
                 <a href="icon-instagram" class="team-link">
                   <svg class="team-icon">
                     <use xlink:href="./symbol-defs.svg#icon-instagram" />
+                  </svg>
+
+                  <svg class="finger-3">
+                    <use xlink:href="./symbol-defs.svg#icon-finger-1"/>
                   </svg>
                 </a>
                 
@@ -401,9 +411,14 @@
           
           <li>
             <div class="symbols">
-              <svg class="symbols-company">
+              <svg class="symbols-company" >
                 <use xlink:href="./symbol-defs.svg#icon-Logo-17" />
               </svg>
+
+              <svg class="finger-4">
+                <use xlink:href="./symbol-defs.svg#icon-finger-1"/>
+              </svg>
+
             </div>
           </li>
           
@@ -426,7 +441,7 @@
     <footer class="footer">
       <!-- logo WebStudio -->
       <div class="footer-parent">
-        <div>
+        <div class="footer-logo-address" >
           <a href="./images/logo-webstudio.png" class="logo-link">
             <p class="logo">
               <span class="logo-web">Web</span>
@@ -485,9 +500,122 @@
             </li>
           </ul>
         </div>
+
+
+        <div class="second-child-footer" >
+          <form method="get" autocomplete="off">
+            <label>
+              Subscribe to the newsletter
+              <input type="text" name="name" id="name" placeholder="E-mail" required  />
+            </label>
+            <button class="subscribe" type="submit"><span>Subscribe</span> <svg class="send" >
+              <use xlink:href="./symbol-defs.svg#icon-icon-send-1"></use>
+
+            </svg>  </button>
+            
+          </form>
+        </div>
+        
+
+        
+        
+        
       </div>
+
     </footer>
 
+
+    <!--modal-->
+
+    <div class=" modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>x</button>
+        
+        <form class="modal-form" action="" method="get" autocomplete="off" >
+          <p>Leave your information and we'll call you back</p>
+          <div class="form-section" >
+            <label for="name">Name</label>
+            <div class="input-1" >
+              <input
+              type="text"
+              name="name"
+              id="name"
+              class="modal-input"/>
+              <div class="icon-container" >
+                <svg class="icon-person-black-18dp-1" >
+                  <use xlink:href="./symbol-defs.svg#icon-person-black-18dp-1" ></use>
+                </svg>
+              </div>
+            </div>
+
+            <label for="name">Telephone</label>
+            <div class="input-1" >
+              <input
+              type="text"
+              name="name"
+              id="name"
+              class="modal-input"/>
+              <div class="icon-container" >
+                <svg class="icon-person-black-18dp-1" >
+                  <use xlink:href="./symbol-defs.svg#icon-phone-black-18dp-1" ></use>
+                </svg>
+              </div>
+            </div>    
+
+            <label for="name">E-mail</label>
+            <div class="input-1" >
+              <input
+              type="text"
+              name="name"
+              id="name"
+              class="modal-input"/>
+              <div class="icon-container" >
+                <svg class="icon-person-black-18dp-1" >
+                  <use xlink:href="./symbol-defs.svg#icon-email-black-18dp-1"  ></use>
+                </svg>
+              </div>
+            </div>    
+
+            <label >Comments</label>
+            <div class="input-2" >
+              <textarea
+              name="feedback"
+              class="modal-input"
+              placeholder="Enter the text"
+              
+              ></textarea>
+            </div>    
+          </div>
+
+          <div class=" checkbox">
+            <label class="label-checkbox" for="terms-and-conditions">
+              <input 
+                class="checkbox-input"
+                id="terms-and-conditions"
+                type="checkbox" 
+                name="terms" 
+                style="width: 16px; height: 15px;"
+              /> 
+            </label>
+            <legend class="legend-terms">
+              <span>
+              I agree with the letter and accept the</span> <a href="#">Terms and Conditions</a>
+            </legend>
+          </div>
+
+          <div class="button-send-container">
+            <button type="submit">Send</button>
+          </div>
+
+
+          
+          
+          
+        </form>
+        
+        
+      </div>
+    </div>
 
 
     <script src="./js/modal.js"></script>
