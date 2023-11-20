@@ -1139,6 +1139,7 @@ button.subscribe span {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
+  cursor: pointer;
 }
 
 .input-1 {
@@ -1219,18 +1220,23 @@ icon-email-black-18dp-1 {
   top: 430px;
 }
 
+.checkbox:hover {
+  cursor: pointer;
+}
+
 .modal-form .label-checkbox {
-  position: absolute;
-  width: 20px;
+  position: relative;
+}
+
+.modal-form .label-checkbox {
+  cursor: pointer;
 }
 
 .checkbox-input {
+  position: relative;
+  top: 5px;
   width: 16px;
   height: 15px;
-  top: 5px;
-  left: 0;
-  position: absolute;
-  background: #212121;
 }
 
 .legend-terms {
@@ -1302,4 +1308,41 @@ icon-email-black-18dp-1 {
 
 .finger-technoduck {
   margin-left: 250px;
+}
+
+.icon-check {
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  position: absolute;
+  left: 0;
+  fill: #000000;
+  cursor: pointer;
+}
+
+.checkbox-input:not(:checked) + svg {
+  display: none;
+  cursor: pointer;
+}
+
+.icon-check > svg:not(:checked) {
+  visibility: hidden;
+}
+
+.custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 15px;
+}
+
+.modal-input:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.modal-input:focus + .icon-container .icon-focus,
+.checkbox-input:focus + .label-checkbox .custom-checkbox .icon-focus {
+  fill: #2196f3; /* Schimbă culoarea la focalizare */
 }
