@@ -54,12 +54,14 @@
               <use href="./symbol-defs.svg#envelope" />
             </svg>
             <a class="email" href="mailto:info@devstudio.com"
-              >info@devstudio.com <svg class="icon-finger-2">
+              >info@devstudio.com </a>
+            <svg class="icon-finger-2">
               <use xlink:href="./symbol-defs.svg#icon-finger-1">
                     
-              </use></svg> 
+              </use>
+            </svg> 
             
-            </a>
+            
             
           </div>
 
@@ -540,7 +542,8 @@
               type="text"
               name="name"
               id="name"
-              class="modal-input"/>
+              class="modal-input"
+              autocomplete="off"/>
               <div class="icon-container" >
                 <svg class="icon-person-black-18dp-1 icon-focus" >
                   <use xlink:href="./symbol-defs.svg#icon-person-black-18dp-1" ></use>
@@ -548,13 +551,14 @@
               </div>
             </div>
 
-            <label for="name">Telephone</label>
+            <label for="Telephone">Telephone</label>
             <div class="input-1" >
               <input
-              type="text"
-              name="name"
-              id="name"
-              class="modal-input"/>
+              type="Telephone"
+              name="Telephone"
+              id="Telephone"
+              class="modal-input"
+              autocomplete="off"/>
               <div class="icon-container" >
                 <svg class="icon-person-black-18dp-1 icon-focus" >
                   <use xlink:href="./symbol-defs.svg#icon-phone-black-18dp-1" ></use>
@@ -562,12 +566,12 @@
               </div>
             </div>    
 
-            <label for="name">E-mail</label>
+            <label for="e-mail">E-mail</label>
             <div class="input-1" >
               <input
-              type="text"
-              name="name"
-              id="name"
+              type="E-mail"
+              name="E-mail"
+              id="E-mail"
               class="modal-input"/>
               <div class="icon-container" >
                 <svg class="icon-person-black-18dp-1 icon-focus" >
@@ -576,7 +580,7 @@
               </div>
             </div>    
 
-            <label >Comments</label>
+            <label for="feedback" >Comments</label >
             <div class="input-2" >
               <textarea
               name="feedback"
@@ -588,12 +592,13 @@
           </div>
 
           <div class=" checkbox">
-            <label class="label-checkbox" for="terms-and-conditions">
+            <label class="label-checkbox" for="terms">
               <input 
                 class="checkbox-input"
                 id="terms-and-conditions"
                 type="checkbox" 
                 name="terms"
+                required
               />
               <span class="custom-checkbox">
                 <svg class="icon-check icon-focus" >

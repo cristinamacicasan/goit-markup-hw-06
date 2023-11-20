@@ -230,8 +230,8 @@ a:active {
   margin-right: 10px;
 }
 
-.envelope-class:hover svg,
-.envelope-class:focus svg {
+.envelope-class:hover .envelope svg,
+.envelope-class:focus .envelope svg {
   fill: rgba(33, 150, 243, 1);
 }
 
@@ -1037,7 +1037,9 @@ label input:focus {
   height: 16px;
   fill: rgba(0, 0, 0, 1);
   background: white;
-  margin-top: 0px;
+  margin-top: 40px;
+  margin-left: 50px;
+  position: absolute;
 }
 
 .finger-3 {
