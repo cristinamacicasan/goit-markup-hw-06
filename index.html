@@ -74,6 +74,13 @@
           </div>
         </div>
       </div>
+
+      <div class="nav-container-mobile">
+        <svg>
+          <use xlink:href="./symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </div>
+
     </header>
 
     <!-- main section -->
@@ -531,7 +538,10 @@
 
     <div class=" modal is-hidden" data-modal>
       <div class="modal-content">
-        <button class="close-btn" data-modal-close>x</button>
+        <svg class="close-btn" data-modal-close >
+            <use xlink:href="./symbol-defs.svg#icon-close"></use>
+        </svg>
+        
         
         <form class="modal-form" action="" method="get" autocomplete="off" >
           <p>Leave your information and we'll call you back</p>
@@ -571,12 +581,12 @@
               </div>
             </div>    
 
-            <label for="e-mail">E-mail</label>
+            <label for="email">E-mail</label>
             <div class="input-1" >
               <input
-              type="E-mail"
-              name="E-mail"
-              id="E-mail"
+              type="email"
+              name="email"
+              id="email"
               class="modal-input"
               required/>
               <div class="icon-container" >
@@ -599,20 +609,17 @@
           </div>
 
           <div class=" checkbox">
-            <label class="label-checkbox" for="terms">
-              <input 
-                class="checkbox-input"
-                id="terms-and-conditions"
-                type="checkbox" 
-                name="terms"
-                required
-              />
-              <span class="custom-checkbox">
-                <svg class="icon-check icon-focus" >
-                  <use xlink:href="./symbol-defs.svg#icon-Vector-1"></use>
-                </svg>
-              </span>
-
+            
+            <input 
+              class="checkbox-input"
+              type="checkbox" 
+              name="terms-and-conditions"
+              value="checked"
+            />
+            <label class="label-checkbox">    
+              <svg class="icon-check icon-focus" >
+                <use xlink:href="./symbol-defs.svg#icon-Vector-1"></use>
+              </svg>
             </label>
             <legend class="legend-terms">
               <span>
